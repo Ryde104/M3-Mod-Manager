@@ -1,0 +1,7 @@
+C:\site\M3-Mod-Manager\m3\bin\Release\net5.0\publish\m3.exe
+C:\site\M3-Mod-Manager\m3\bin\Release\net5.0\publish\m3.dll
+C:\site\M3-Mod-Manager\m3\bin\Release\net5.0\publish\m3.deps.json
+C:\site\M3-Mod-Manager\m3\bin\Release\net5.0\publish\m3.runtimeconfig.json
+C:\site\M3-Mod-Manager\m3\bin\Release\net5.0\publish\m3.pdb
+C:\site\M3-Mod-Manager\m3\bin\Release\net5.0\publish\Newtonsoft.Json.dll
+C:\site\M3-Mod-Manager\m3\bin\Release\net5.0\publish\Microsoft.WindowsAzure.Storage.dll

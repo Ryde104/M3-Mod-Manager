@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "m3": {
+      "commandName": "Project",
+      "commandLineArgs": "pull danimal521"
+    }
+  }
+}
