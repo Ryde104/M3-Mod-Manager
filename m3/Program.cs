@@ -12,14 +12,14 @@ namespace m3
 
         static async Task Main(string[] args)
         {
-            string strMethod = string.Empty;
-            string strValue = string.Empty;
-            string strRun = string.Empty;
+            string strMethod                                            = string.Empty;
+            string strValue                                             = string.Empty;
+            string strRun                                               = string.Empty;
 
             if(args.Length > 1)
             {
-                strMethod = Clean(args[0]);
-                strValue = Clean(args[1]);
+                strMethod                                               = Clean(args[0]);
+                strValue                                                = Clean(args[1]);
 
                 switch(strMethod)
                 {
@@ -53,10 +53,7 @@ namespace m3
 
                 //Check mod folder
                 if (!Directory.Exists(strBase + @"\.minecraft\mod"))
-                {
                     Directory.CreateDirectory(strBase + @"\.minecraft\mod");
-                    return;
-                }
 
                 string[] astrLocalFiles                                     = Directory.GetFiles(strBase + @"\.minecraft\mod");
 
@@ -71,7 +68,11 @@ namespace m3
                 {
                     string strFileName = Path.GetFileName(item.Uri.ToString());
                     Console.WriteLine("Checking: " + strFileName);
-                    await bcContainer.GetBlockBlobReference(strFileName).DownloadToFileAsync(strBase + @"\.minecraft\mod\" + strFileName, FileMode.Create);
+
+                    if (!Contains(astrLocalFiles, strFileName))
+                    {
+                        await bcContainer.GetBlockBlobReference(strFileName).DownloadToFileAsync(strBase + @"\.minecraft\mod\" + strFileName, FileMode.Create);
+                    }
                 }
             }
             catch (Exception exError)
@@ -79,6 +80,17 @@ namespace m3
                 Console.WriteLine("Errors!");
                 Console.WriteLine(exError.Message);
             }
+        }
+
+        public static bool Contains(string[] astr, string strCompare)
+        {
+            foreach(string str in astr)
+            {
+                if (Path.GetFileName(str) == strCompare)
+                    return true;
+            }
+
+            return false;
         }
 
         public static void WriteHelp()
