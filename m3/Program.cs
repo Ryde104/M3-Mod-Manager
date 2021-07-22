@@ -55,7 +55,7 @@ namespace m3
                 if (!Directory.Exists(strBase + @"\.minecraft\mods"))
                     Directory.CreateDirectory(strBase + @"\.minecraft\mods");
 
-                string[] astrLocalFiles                                     = Directory.GetFiles(strBase + @"\.minecraft\mod");
+                string[] astrLocalFiles                                     = Directory.GetFiles(strBase + @"\.minecraft\mods");
 
                 CloudStorageAccount saAccount                               = CloudStorageAccount.Parse(CONNECTION_STRING);
                 CloudBlobClient bClient                                     = saAccount.CreateCloudBlobClient();
