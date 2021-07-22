@@ -8,7 +8,7 @@ namespace m3
 {
     class Program
     {
-        const string CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=mmmmanager;AccountKey=FlQhJa61/6N2ikK1J8v2zYGhX5uZGUZSxpqlfNsTzOW/0F791bib3siFpzKliGHSPcepSgQmzhQ4IFPKYcIP5A==;EndpointSuffix=core.windows.net";
+        const string CONNECTION_STRING = "";
 
         static async Task Main(string[] args)
         {
