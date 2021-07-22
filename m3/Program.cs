@@ -52,8 +52,8 @@ namespace m3
                 }
 
                 //Check mod folder
-                if (!Directory.Exists(strBase + @"\.minecraft\mod"))
-                    Directory.CreateDirectory(strBase + @"\.minecraft\mod");
+                if (!Directory.Exists(strBase + @"\.minecraft\mods"))
+                    Directory.CreateDirectory(strBase + @"\.minecraft\mods");
 
                 string[] astrLocalFiles                                     = Directory.GetFiles(strBase + @"\.minecraft\mod");
 
