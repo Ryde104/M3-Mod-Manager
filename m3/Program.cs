@@ -9,7 +9,6 @@ namespace m3
     class Program
     {
         const string CONNECTION_STRING = "";
-
         static async Task Main(string[] args)
         {
             string strMethod                                            = string.Empty;
@@ -71,7 +70,7 @@ namespace m3
 
                     if (!Contains(astrLocalFiles, strFileName))
                     {
-                        await bcContainer.GetBlockBlobReference(strFileName).DownloadToFileAsync(strBase + @"\.minecraft\mod\" + strFileName, FileMode.Create);
+                        await bcContainer.GetBlockBlobReference(strFileName).DownloadToFileAsync(strBase + @"\.minecraft\mods\" + strFileName, FileMode.Create);
                     }
                 }
             }
