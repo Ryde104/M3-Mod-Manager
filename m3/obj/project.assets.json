@@ -5243,20 +5243,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rbisc\\.nuget\\packages\\": {}
+    "C:\\Users\\dabiscup\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\M3-Mod-Manager\\m3\\m3.csproj",
+      "projectUniqueName": "C:\\site\\M3-Mod-Manager\\m3\\m3.csproj",
       "projectName": "m3",
-      "projectPath": "D:\\M3-Mod-Manager\\m3\\m3.csproj",
-      "packagesPath": "C:\\Users\\rbisc\\.nuget\\packages\\",
-      "outputPath": "D:\\M3-Mod-Manager\\m3\\obj\\",
+      "projectPath": "C:\\site\\M3-Mod-Manager\\m3\\m3.csproj",
+      "packagesPath": "C:\\Users\\dabiscup\\.nuget\\packages\\",
+      "outputPath": "C:\\site\\M3-Mod-Manager\\m3\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\rbisc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\dabiscup\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
